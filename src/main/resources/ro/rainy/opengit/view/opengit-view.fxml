@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER"
+      spacing="10.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/21"
+      fx:controller="ro.rainy.opengit.controller.OpenGitController">
+    <HBox styleClass="navbar, debug" spacing="10">
+        <Button mnemonicParsing="false" styleClass="navbar-btn" contentDisplay="TOP" text="Fetch">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/fetch.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button mnemonicParsing="false" contentDisplay="TOP" text="Pull">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/pull.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button mnemonicParsing="false" contentDisplay="TOP" text="Push">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/push.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button mnemonicParsing="false" contentDisplay="TOP" text="Settings" style="-fx-end-margin: 5">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/setting.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+
+    <HBox prefHeight="Infinity" prefWidth="Infinity" style="-fx-border-color: red; -fx-border-width: 1">
+        <VBox prefWidth="250" styleClass="debug">
+            <Accordion maxHeight="-Infinity">
+                <panes>
+                    <TitledPane text="Workspace">
+
+                    </TitledPane>
+                    <TitledPane text="Tags">
+
+                    </TitledPane>
+                    <TitledPane text="Branches">
+
+                    </TitledPane>
+                </panes>
+            </Accordion>
+        </VBox>
+        <TableView styleClass="debug" HBox.hgrow="ALWAYS">
+            <columns>
+                <TableColumn text="Graph"></TableColumn>
+                <TableColumn text="Commit"></TableColumn>
+                <TableColumn text="Author"></TableColumn>
+                <TableColumn text="Message"></TableColumn>
+                <TableColumn text="Date"></TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+</VBox>

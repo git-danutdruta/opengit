@@ -1,0 +1,52 @@
+.root {
+    /*-fx-background-color: #4f8f76;*/
+    /*-fx-background-color: linear-gradient(from 100px 250px to 550px 1000px, #4f8f76, #9568ff);*/
+    -fx-background-color: linear-gradient(from 10% 10% to 100% 100%, #4f8f76, rgb(222, 255, 104));
+    /*-fx-background-color: linear-gradient(from 100px 250px to 550px 1000px, #4f8f76, #deff68);*/
+}
+
+.navbar {
+    -fx-background-color: rgba(82, 191, 255, 0.5);
+    -fx-padding: 5px
+}
+
+.navbar-btn {
+}
+
+.debug {
+    -fx-border-width: 1;
+    -fx-border-color: green;
+}
+
+
+primary-color{
+    -fx-background-color: #009688;
+}
+
+dark-primary-color{
+    -fx-background-color: #00796B;
+}
+
+light-primary-color{
+    -fx-background-color: #B2DFDB;
+}
+
+text-icon-color{
+    -fx-background-color: #FFFFFF;
+}
+
+primary-text-color{
+    -fx-background-color: #212121;
+}
+
+accent-color{
+    -fx-background-color: #9E9E9E;
+}
+
+secondary-text-color{
+    -fx-background-color: #757575;
+}
+
+divider-color{
+    -fx-background-color: #BDBDBD;
+}

@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: OpenGit
+  main:
+    banner-mode: off
+  profiles:
+    active: ${ENV:dev}
+
+logging:
+  file:
+    name: ./logs/opengit.log
+
+app:
+  title: 'OpenGit - v@project.version@'
+  version: '@project.version@'
+  java-version: '@java.version@'
+  view:
+    width: 900
+    height: 600
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prd
