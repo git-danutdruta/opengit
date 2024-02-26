@@ -3,15 +3,19 @@ module ro.rainy.opengit {
     requires javafx.fxml;
     requires javafx.web;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-//    requires eu.hansolo.tilesfx;
+    requires spring.beans;
+    requires spring.boot;
+    requires spring.boot.autoconfigure;
+    requires spring.context;
+    requires spring.core;
 
-    opens ro.rainy.opengit to javafx.fxml;
+    requires static lombok;
+
+    opens ro.rainy.opengit to javafx.fxml, spring.core;
+    opens ro.rainy.opengit.controller to javafx.fxml, spring.core;
+    opens ro.rainy.opengit.component to spring.core;
+
     exports ro.rainy.opengit;
     exports ro.rainy.opengit.controller;
-    opens ro.rainy.opengit.controller to javafx.fxml;
+    exports ro.rainy.opengit.component;
 }
