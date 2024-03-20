@@ -10,6 +10,7 @@ module ro.rainy.opengit {
     requires spring.core;
 
     requires static lombok;
+    requires jakarta.annotation;
 
     opens ro.rainy.opengit to javafx.fxml, spring.core;
     opens ro.rainy.opengit.controller to javafx.fxml, spring.core;
@@ -18,4 +19,6 @@ module ro.rainy.opengit {
     exports ro.rainy.opengit;
     exports ro.rainy.opengit.controller;
     exports ro.rainy.opengit.component;
+    exports ro.rainy.opengit.view;
+    exports ro.rainy.opengit.view.control;
 }
