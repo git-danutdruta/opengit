@@ -4,3 +4,5 @@ Open source JavaFX based application to facilitate interaction with git utilitar
 <!-- Major(Breaking API) - Minor(Feature - API compatibility backwards) - Patches(Bugfix) -->
 
 V1.0.0
+
+![alt text](https://github.com/git-danutdruta/opengit/blob/feature/initial-structure/OpenGit.png)
