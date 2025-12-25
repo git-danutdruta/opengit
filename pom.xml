@@ -6,17 +6,28 @@
 
     <groupId>ro.rainy</groupId>
     <artifactId>opengit</artifactId>
-    <version>1.0.0</version>
+    <version>${project.version}</version>
     <name>opengit</name>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>model</module>
+        <module>core</module>
+        <module>services</module>
+        <module>ui</module>
+        <module>app</module>
+    </modules>
 
     <description>OpenGit application pom definition</description>
 
     <properties>
+        <project.version>1.0.0</project.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <javafx.version>21</javafx.version>
 
         <javafx-maven-plugin.version>0.0.8</javafx-maven-plugin.version>
+        <jgit.version>7.5.0.202512021534-r</jgit.version>
     </properties>
 
     <dependencyManagement>
